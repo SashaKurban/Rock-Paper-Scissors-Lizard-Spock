@@ -1,0 +1,148 @@
+body{
+   background-color: rgba(21, 97, 109);
+   margin:0px;
+   font-family: 'Orbitron', sans-serif;
+   text-align: center;
+
+}
+/* Header */
+header{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid rgba(255, 125, 0);
+    background-color: rgba(0, 21, 36);
+}
+h1{
+    color:rgb(255, 125, 0);
+    font-size: 46px;
+}
+
+/* Main */
+h2{
+    color:rgba(255, 236, 209);
+    font-size:34px;
+}
+p{
+    color:rgba(255, 236, 209);;
+    font-size: 28px;
+}
+.status{
+    padding:0px;
+    margin: 10px;
+
+}
+.scores-panel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px;
+    padding: 10px;
+    margin: auto;
+}
+.score{
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    border: 2px solid rgba(255, 236, 209);
+    border-radius: 10px;
+    background-color: rgba(120, 41, 15);
+    padding: 20px;
+  }
+
+  .btn:hover {
+    background-color: grey;
+  }
+  
+  .btn:active {
+    background-color: rgba(120, 41, 15);
+  }
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+.far,
+.fas {
+  font-size: 90px;
+  color:rgba(255, 236, 209);
+
+}
+
+.fas {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.fas.active {
+  visibility: visible;
+}
+/* Footer*/
+footer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+  .h1{
+    font-size: 18px;
+  }
+
+  .h2 {
+    font-size: 14px;
+  }
+
+  .p{
+    font-size: 12px;
+  }
+
+  .far,
+  .fas {
+    font-size: 35px;
+  }
+  .buttons{
+    gap: 3px;
+  }
+}
+
+/* The Modal */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgba(0, 21, 36);
+  margin: 15% auto; 
+  padding: 20px;
+  border: 2px solid rgba(255, 236, 209);
+  width: 50%; 
+}
+.newGame-button{
+    border: 2px solid rgba(255, 236, 209);
+    border-radius: 10px;
+    background-color: rgba(120, 41, 15);
+    padding: 3px;
+}

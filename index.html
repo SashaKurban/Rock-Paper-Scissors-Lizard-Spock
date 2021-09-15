@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Rock-Paper-Scissors-Lizard-Spock</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/39497edef8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+	    <h1 class="title">Rock Paper Scissors Lizard Spock</h1>
+    </header>
+    <main>
+        <div class="score-area">
+            <h2 class="status" id="status-id">Score</h2>
+            <div class="scores-panel">
+                <div class="score">
+                    <p class="palyer-score" id="player-score-id">Player: 0</p>
+                    <i class="fas fa-hand-paper" id="player-choice"></i>
+                </div>
+                <div class="score">
+                    <p class="computer-score" id="computer-score-id">Computer: 0</p>
+                    <i class="fas fa-hand-paper" id="computer-choice"></i>
+                </div> 
+            </div>
+        </div>
+        <div class=buttons>
+            <button class="btn" id="rock">
+               <i class="far fa-hand-rock"></i> 
+
+            </button>
+            <button class="btn" id="paper">
+                <i class="far fa-hand-paper"></i>
+            </button>
+            <button class="btn" id="scissors">
+                <i class="far fa-hand-scissors"></i>
+            </button>
+            <button class="btn" id="lizard">
+                <i class="far fa-hand-lizard"></i>
+            </button>
+            <button class="btn" id="spock">
+                <i class="far fa-hand-spock"></i>
+            </button>
+        </div>
+        <!-- The Modal -->
+        <div id="endGameModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <h1 class="win-status" id="win-status">status</h1>
+                <button class="newGame-button" id="new-game-btn">
+                    <h2 class="new-game-prompt">New Game</h2>
+                </button>
+            </div>
+        
+        </div>
+    </main>
+    <footer>
+    </footer>
+	<script src="script.js">
+
+	</script>
+</body>
+
+</html>
